@@ -1,10 +1,7 @@
+'use client'
+import LeftSide from '@/components/LeftSide'
 import Navbar from '@/components/Navbar'
 import Head from 'next/head'
-// import Image from 'next/image'
-// import { Inter } from 'next/font/google'
-// import styles from '@/styles/Home.module.css'
-
-// const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
@@ -18,7 +15,18 @@ export default function Home() {
       <main className='w-full h-screen font-bodyFont bg-bodyColor 
       text-textLight overflow-x-hidden overflow-y-scroll'>
         <Navbar/>
-        hello
+        <div className="w-full h-[88vh] xl:flex items-center gap-20 justify-between">
+          <div className='hidden xl:inline-flex w-20 h-full fixed left-0 bottom-0'>
+          <LeftSide/>
+          </div>
+          <div>
+
+          </div>
+          <div>
+
+          </div>
+
+        </div>
       </main>
     </>
   )

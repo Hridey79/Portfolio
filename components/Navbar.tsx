@@ -10,45 +10,70 @@ const Navbar = () => {
   return (
     <div className='w-full shadow-navShadow h-20 sticky top-0 z-50 bg-bodyColor px-4 lg:h-[12vh]'>
       <div className='max-w-container h-full mx-auto py-1 font-inter flex items-center justify-between'>
-      <div>
+      <motion.div 
+          initial={{opacity: 0}}
+          animate={{opacity: 1}}  
+          transition={{duration: 0.5}}
+        >
           <Image className='w-10 cursor-pointer' src={logo} alt='logo'></Image>
-        </div>
+        </motion.div>
         <div className='hidden mdl:inline-flex gap-7 items-center'>
           <ul className='flex text-[13px] gap-7'>
             <Link href="#home" className='flex items-center gap-1 font-medium text-textDark hover:text-textGreen 
               cursor-pointer duration-300 nav-link'>
-              <li>Home</li>
+              <motion.li
+                initial={{y: -10, opacity: 0}}
+                animate={{ y: 0, opacity: 1}}
+                transition={{ duration: 0.1}}
+              >Home</motion.li>
             </Link>
             <Link href="#about" className='flex items-center gap-1 font-medium text-textDark hover:text-textGreen 
               cursor-pointer duration-300 nav-link'>
-              <li>
+              <motion.li
+                initial={{ y: -10, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.2 }}
+                >
                 <span className='text-textGreen'>01.</span> About
-              </li>
+              </motion.li>
             </Link>
             <Link href="#experience" className='flex items-center gap-1 font-medium text-textDark hover:text-textGreen 
               cursor-pointer duration-300 nav-link'>
-              <li>
+              <motion.li
+                initial={{ y: -10, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.3 }}
+                >
                 <span className='text-textGreen'>02.</span> Experience
-              </li>
+              </motion.li>
             </Link>
             <Link href="#projects" className='flex items-center gap-1 font-medium text-textDark hover:text-textGreen 
               cursor-pointer duration-300 nav-link'>
-              <li>
+              <motion.li
+                initial={{ y: -10, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.4 }}
+                >
                 <span className='text-textGreen'>03.</span> Projects
-              </li>
+              </motion.li>
             </Link>
             <Link href="#contact" className='flex items-center gap-1 font-medium text-textDark hover:text-textGreen 
               cursor-pointer duration-300 nav-link'>
-              <li>
+              <motion.li
+                initial={{ y: -10, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.5 }}
+                >
                 <span className='text-textGreen'>04.</span> Contact
-              </li>
+              </motion.li>
             </Link>
           </ul>
-          <a href="assets/resume.pdf" target='_blank'>
-            <button className='text-textGreen border border-textGreen px-[10px] py-[5px] 
-            rounded-lg hover:bg-hoverColor'>
-              Resume
-            </button>
+          <a href="assets/George resume.pdf" target='_blank'>
+            <motion.button className='text-textGreen border border-textGreen px-[10px] py-[5px] rounded-lg hover:bg-hoverColor'
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.6 }}
+            >Resume</motion.button>
           </a>
         </div>
         {/* menu icon */}
