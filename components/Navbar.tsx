@@ -17,7 +17,7 @@ const Navbar = () => {
         >
           {/* <Image className='w-10 cursor-pointer' src={logo} alt='logo'></Image> */}
           <h1 className="font-signature text-textGreen capitalize text-2xl relative group top-1">
-        <a href="#hero" className="block">
+        <a href="#home" className="block">
           Hridey
           <div className="absolute bottom-1.5 left-0 h-[1px] w-0 group-hover:w-full bg-accent duration-300"></div>
         </a>

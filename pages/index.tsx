@@ -5,6 +5,8 @@ import RightSide from '@/components/RightSide'
 import Intro from '@/components/Intro'
 import Head from 'next/head'
 import {motion} from 'framer-motion'
+import About from '@/components/About'
+import Experience from '@/components/Experience'
 
 export default function Home() {
   return (
@@ -28,6 +30,8 @@ export default function Home() {
           </motion.div>
           <motion.div className='h-[88vh] mx-auto p-4'>
             <Intro/>
+            <About/>
+            <Experience/>
           </motion.div>
           <motion.div
           initial={{opacity:0}}
