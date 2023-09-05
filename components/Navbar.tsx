@@ -8,14 +8,20 @@ import { logo } from '@/public/assets'
 
 const Navbar = () => {
   return (
-    <div className='w-full shadow-navShadow h-20 sticky top-0 z-50 bg-bodyColor px-4 lg:h-[12vh]'>
+    <div className='w-full shadow-navShadow h-20 sticky top-0 z-50 bg-bodyColor px-4 lg:h-[12vh] hover:shadow-navbarShadow'>
       <div className='max-w-container h-full mx-auto py-1 font-inter flex items-center justify-between'>
       <motion.div 
           initial={{opacity: 0}}
           animate={{opacity: 1}}  
           transition={{duration: 0.5}}
         >
-          <Image className='w-10 cursor-pointer' src={logo} alt='logo'></Image>
+          {/* <Image className='w-10 cursor-pointer' src={logo} alt='logo'></Image> */}
+          <h1 className="font-signature text-textGreen capitalize text-2xl relative group top-1">
+        <a href="#hero" className="block">
+          Hridey
+          <div className="absolute bottom-1.5 left-0 h-[1px] w-0 group-hover:w-full bg-accent duration-300"></div>
+        </a>
+      </h1>
         </motion.div>
         <div className='hidden mdl:inline-flex gap-7 items-center'>
           <ul className='flex text-[13px] gap-7'>

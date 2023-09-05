@@ -2,6 +2,7 @@
 import LeftSide from '@/components/LeftSide'
 import Navbar from '@/components/Navbar'
 import RightSide from '@/components/RightSide'
+import Intro from '@/components/Intro'
 import Head from 'next/head'
 import {motion} from 'framer-motion'
 
@@ -21,17 +22,17 @@ export default function Home() {
           <motion.div 
           initial={{opacity:0}}
           animate={{opacity:1}}
-          transition={{delay:1.5}}
+          transition={{delay:1}}
           className='hidden xl:inline-flex w-20 h-full fixed left-0 bottom-0'>
           <LeftSide/>
           </motion.div>
           <motion.div className='h-[88vh] mx-auto p-4'>
-            Middle
+            <Intro/>
           </motion.div>
           <motion.div
           initial={{opacity:0}}
           animate={{opacity:1}}
-          transition={{delay:1.5}}
+          transition={{delay:1}}
           className='hidden xl:inline-flex w-32 h-full fixed right-0 bottom-0'>
             <RightSide/>
           </motion.div>
