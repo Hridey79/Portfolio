@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 const Intro = () => {
   return (
     <motion.div id='home' className='max-w-contentContainer mx-auto py-10 mdl:py-24 flex flex-col gap-4
-        lgl:gap-8 mdl:px-10 xl:px-4'
+        lgl:gap-8 mdl:px-26 xl:px-20'
           initial={{x: -200, opacity: 0}}
           animate={{x: 0, opacity: 1}}
           transition={{duration: 0.8}}  

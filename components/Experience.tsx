@@ -25,7 +25,7 @@ const Experience = () => {
         setWorkLorem(true)
     }
   return (
-    <div id="experience" className='max-w-containerXs mx-auto pb-10 pt-10'>
+    <div id="experience" className='max-w-containerXs mx-auto pb-10 pt-10 px-20'>
       <SectionTitle title="Where i have worked" titleNo="02"/>
       <div className='w-full mt-10 flex flex-col md:flex-row gap-16'>
         <ul className='md:w-32 flex flex-col'>

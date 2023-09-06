@@ -2,6 +2,7 @@
 
 import React from 'react'
 import { FiGithub, FiLinkedin, FiInstagram } from "react-icons/fi"
+import {SiCodeforces,SiLeetcode} from "react-icons/si"
 import { motion } from 'framer-motion'
 
 const LeftSide = () => { 
@@ -22,10 +23,15 @@ return (
             justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 
             transition-all duration-300'><FiLinkedin/></span>
         </a>
+        <a href="https://leetcode.com/Hridey79/" target='_blank'>
+            <span className='w-10 h-10 text-xl bg-bodyColor rounded-full inline-flex items-center
+            justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 
+            transition-all duration-300'><SiLeetcode/></span>
+        </a>
         <a href="https://github.com/Hridey79" target='_blank'>
             <span className='w-10 h-10 text-xl bg-bodyColor rounded-full inline-flex items-center
             justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 
-            transition-all duration-300'><FiInstagram/></span>
+            transition-all duration-300'><SiCodeforces/></span>
         </a>
     </div>
     <div className='w-[2px] h-32 bg-textDark'></div>

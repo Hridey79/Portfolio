@@ -4,7 +4,6 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { logo } from '@/public/assets'
 
 const Navbar = () => {
   return (
@@ -17,12 +16,12 @@ const Navbar = () => {
         >
           {/* <Image className='w-10 cursor-pointer' src={logo} alt='logo'></Image> */}
           <h1 className="font-signature text-textGreen capitalize text-2xl relative group top-1">
-        <a href="#home" className="block">
-          Hridey
-          <div className="absolute bottom-1.5 left-0 h-[1px] w-0 group-hover:w-full bg-accent duration-300"></div>
-        </a>
-      </h1>
-        </motion.div>
+            <a href="#home" className="block">
+              Hridey
+              <div className="absolute bottom-1.5 left-0 h-[1px] w-0 group-hover:w-full bg-accent duration-300"></div>
+            </a>
+          </h1>
+      </motion.div>
         <div className='hidden mdl:inline-flex gap-7 items-center'>
           <ul className='flex text-[13px] gap-7'>
             <Link href="#home" className='flex items-center gap-1 font-medium text-textDark hover:text-textGreen 

@@ -1,8 +1,7 @@
-import logo from './images/logo.png'
 import profile from './images/profile.jpg'
-import amd from './images/AmdEats.png'
-import fashion from './images/fashion.png'
-import movie from './images/moviewebsite.png'
-import sports from './images/sportswear.png'
+import amazon from './images/amazonImg.png'
+import pew from './images/pew.png'
+import blog from './images/blog.png'
+import churn from './images/churn.png'
 
-export {logo, profile, amd, fashion, movie, sports};
+export {pew, profile, blog, churn,amazon};
