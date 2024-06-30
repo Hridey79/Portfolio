@@ -7,15 +7,15 @@ import { pew, blog, churn } from '@/public/assets'
 
 const Projects = () => {
   return (
-    <div id='projects' className='max-w-contentContainer mx-auto py-10 px-20'>
+    <div id='projects' className='max-w-contentContainer mx-auto py-10 px-20 pt-40'>
       <SectionTitle title="Some things I have built" titleNo='03'/>
 
-      <div className='w-full flex flex-col items-center justify-center xl:gap-28 mt-10'>
+      <div className='w-full flex flex-col items-center justify-center xl:gap-28 mt-20'>
         {/* Project 1 */}
-        <div className='flex flex-col xl:flex-row gap-6  mb-5 xl:-mb-5'>
-          <a href="#" target='_blank' className='w-full xl:w-1/2 relative -mb-80'>
-            <div className='h-[400px] w-full overflow-hidden'>
-              <Image className='w-full object-contain cursor-pointer translate-y-0' 
+        <div className='flex flex-col xl:flex-row gap-6  mb-5 xl:-mb-5 '>
+          <a href="#" target='_blank' className='w-full xl:w-1/2 relative -mb-80 '>
+            <div className='h-[400px]  w-full overflow-hidden'>
+              <Image className='border-solid border-2 border-textLight w-full object-contain cursor-pointer translate-y-0 rounded-md' 
                   src={pew}
                   alt='Sports website'
               />
@@ -24,11 +24,11 @@ const Projects = () => {
         <div className='w-full xl:w-1/2 flex flex-col gap-6 items-end text-left xl:-ml-16 z-10'>
           <p className='text-textGreen font-inter text-sm tracking-wide'>Featured Project</p>
           <h3 className='text-2xl font-bold'>Sports Wear</h3>
-          <p className='bg-[#112240] md:text-base text-sm p-2 md:p-6 rounded-md'>An e-commerce sports wear website for visualizing personalized Amazon website. 
+          <p className='bg-bodyColor border-solid border-2 border-textLight md:text-base text-sm p-2 md:p-6 rounded-md'>An e-commerce sports wear website for visualizing personalized Amazon website. 
              View your products, Add your account with O-auth and then make the purchase 
              using stripe.
           </p>
-          <ul className='text-xs md:text-sm font-inter tracking-wide flex justify-between text-textDark gap-2 md:gap-5'>
+          <ul className='text-xs md:text-sm font-inter tracking-wide flex justify-between text-textLight gap-2 md:gap-5'>
             <li>Next js</li>
             <li>React</li>
             <li>typescript</li>
@@ -50,7 +50,7 @@ const Projects = () => {
         <div className='flex flex-col xl:flex-row-reverse gap-6 mb-5 xl:-mb-5'>
           <a href="#" target='_blank' className='w-full xl:w-1/2 relative'>
             <div className='h-[400px] w-full overflow-hidden -mb-80'>
-              <Image className='w-full object-contain cursor-pointer translate-y-0' 
+              <Image className='w-full object-contain cursor-pointer translate-y-0 border-solid border-2 border-textLight rounded-md' 
                   src={churn}
                   alt='Sports website'
               />
@@ -59,11 +59,11 @@ const Projects = () => {
         <div className='w-full xl:w-1/2 flex flex-col gap-6 items-end text-left  z-10'>
           <p className='text-textGreen font-inter text-sm tracking-wide'>Featured Project</p>
           <h3 className='text-2xl font-bold'>Amd Eats</h3>
-          <p className='bg-[#112240] md:text-base text-sm p-2 md:p-6 rounded-md xl:-mr-16'>
+          <p className='bg-bodyColor border-solid border-2 border-textLight md:text-base text-sm p-2 md:p-6 rounded-md xl:-mr-16'>
             An android food delivery app where restaurant owners can add new food items to their cuisine and can see the food items users have ordered. 
             users can see all the restaurants and can see their cuisines and the prices. users can add the food to their cart.
           </p>
-          <ul className='text-xs md:text-sm font-inter tracking-wide flex justify-between text-textDark gap-2 md:gap-5'>
+          <ul className='text-xs md:text-sm font-inter tracking-wide flex justify-between text-textLight gap-2 md:gap-5'>
             <li>Java</li>
             <li>retrofit</li>
             <li>Firebase</li>
@@ -81,10 +81,10 @@ const Projects = () => {
         </div>
         </div>
         {/* Project 3 */}
-        <div className='flex flex-col xl:flex-row gap-6'>
+        <div className='flex flex-col xl:flex-row gap-6 '>
           <a href="#" target='_blank' className='w-full xl:w-1/2 relative'>
-            <div className='h-[400px] w-full overflow-hidden -mb-80'>
-              <Image className='w-full object-contain cursor-pointer translate-y-0' 
+            <div className='h-[400px] w-full overflow-hidden -mb-80  '>
+              <Image className='w-full object-contain cursor-pointer translate-y-0 border-solid border-2 border-textLight rounded-md ' 
                   src={blog}
                   alt='Fashion Wear website'
               />
@@ -93,11 +93,11 @@ const Projects = () => {
         <div className='w-full xl:w-1/2 flex flex-col gap-6 items-end text-left xl:-ml-16 z-10'>
           <p className='text-textGreen font-inter text-sm tracking-wide'>Featured Project</p>
           <h3 className='text-2xl font-bold'>Fashion Wear</h3>
-          <p className='bg-[#112240] md:text-base text-sm p-2 md:p-6 rounded-md'>An e-commerce sports wear website for visualizing personalized Amazon website. 
+          <p className='bg-bodyColor border-solid border-2 border-textLight md:text-base text-sm p-2 md:p-6 rounded-md'>An e-commerce sports wear website for visualizing personalized Amazon website. 
              View your products, Add your account with O-auth and then make the purchase 
              using stripe.
           </p>
-          <ul className='text-xs md:text-sm font-inter tracking-wide flex justify-between text-textDark gap-2 md:gap-5'>
+          <ul className='text-xs md:text-sm font-inter tracking-wide flex justify-between text-textLight gap-2 md:gap-5'>
             <li>Next js</li>
             <li>React</li>
             <li>typescript</li>

@@ -11,6 +11,7 @@ const Intro = () => {
           animate={{x: 0, opacity: 1}}
           transition={{duration: 0.8}}  
       >
+      <canvas id="scene"></canvas>
       <h3 className='text-2xl font-inter text-textGreen tracking-wide'>Hi, my name is</h3>
       <h1 className='text-3xl lgl:text-6xl font-inter font-semibold flex flex-col gap-3'>Hridey Verma. 
         <span className='text-textDark'>I build things for the web.</span>
@@ -25,8 +26,8 @@ const Intro = () => {
         </span>
       </p>
       <a href="https://github.com/Hridey79" target='_blank'>
-        <button className='text-sm text-textGreen border border-textGreen rounded-lg
-        hover:bg-hoverColor w-52 h-14 tracking-wide'>
+        <button className='text-sm text-textLight border border-textLight rounded-lg
+        hover:border-textDark hover:text-textDark w-52 h-14 tracking-wide'>
           check out my projects!
         </button>
       </a>

@@ -15,7 +15,7 @@ return (
                 <p className='text-sm rotate-90 w-72 gap-4 tracking-wide hover:text-textGreen  hover:-translate-y-2 
                     transition-all duration-300'>hrideykv18@gmail.com</p>
             </a>
-            <div className='w-[2px] h-32 bg-textDark'></div>
+            <div className='w-[2px] h-32 bg-textLight'></div>
         </div>
     </motion.div> 
 )

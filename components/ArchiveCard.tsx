@@ -9,9 +9,9 @@ interface propsTypes {
 
 const ArchiveCard = ({title, description, tech}: propsTypes) => {
   return (
-    <a href='https://github.com/GeorgeMuigai' target='_blank' className='w-full h-[290px] rounded-lg bg-[#112240] p-7 flex flex-col gap-6 hover:-translate-y-2 transition-transform duration-300 group'>
+    <a href='https://github.com/GeorgeMuigai' target='_blank' className='bg-bodyColor border-solid border-2 border-textLight w-full h-[290px] rounded-lg p-7 flex flex-col gap-6 hover:-translate-y-2 transition-transform duration-300 group'>
         <div className='flex justify-between'>
-            <FaRegFolder className='text-3xl text-textGreen'/>
+            <FaRegFolder className='text-3xl text-textLight'/>
             <RxOpenInNewWindow className='text-3xl hover:text-textGreen'/>
         </div>
         <div>

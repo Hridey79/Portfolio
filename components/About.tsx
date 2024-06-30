@@ -10,7 +10,7 @@ return (
      mdl:px-10 xl:px-2'>
         <SectionTitle title="About me" titleNo="01"/>
         <div className='flex flex-col lgl:flex-row gap-16'>
-            <div className='w-full lgl:w-2/3 text-base text-textDark font-medium flex flex-col gap-4'>
+            <div className='w-full lgl:w-2/3 text-base text-textLight font-medium flex flex-col gap-4'>
                 <p> As a junior web developer, I excel in designing and maintaining apps and responsive 
                     websites that offer smooth user experience. My expertise lies in crafting, engaging interfaces through
                     writing clean and optimized code. I am also a team player who thrives in collaborating with cross-functional 

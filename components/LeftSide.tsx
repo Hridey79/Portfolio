@@ -34,7 +34,7 @@ return (
             transition-all duration-300'><SiCodeforces/></span>
         </a>
     </div>
-    <div className='w-[2px] h-32 bg-textDark'></div>
+    <div className='w-[2px] h-32 bg-textLight'></div>
     </motion.div>
 )
 }
