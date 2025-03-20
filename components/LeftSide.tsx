@@ -16,25 +16,25 @@ return (
         <a href="https://github.com/Hridey79" target='_blank'>
             <span className='w-10 h-10 text-xl bg-bodyColor rounded-full inline-flex items-center
             justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 
-            transition-all duration-300'><FiGithub/></span>
+            transition-all duration-300'><FiGithub size={28}/></span>
         </a>
         <a href="https://www.linkedin.com/in/hridey-verma-67633a225/" target='_blank'>
             <span className='w-10 h-10 text-xl bg-bodyColor rounded-full inline-flex items-center
             justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 
-            transition-all duration-300'><FiLinkedin/></span>
+            transition-all duration-300'><FiLinkedin size={28}/></span>
         </a>
         <a href="https://leetcode.com/Hridey79/" target='_blank'>
             <span className='w-10 h-10 text-xl bg-bodyColor rounded-full inline-flex items-center
             justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 
-            transition-all duration-300'><SiLeetcode/></span>
+            transition-all duration-300'><SiLeetcode size={28}/></span>
         </a>
         <a href="https://github.com/Hridey79" target='_blank'>
             <span className='w-10 h-10 text-xl bg-bodyColor rounded-full inline-flex items-center
             justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 
-            transition-all duration-300'><SiCodeforces/></span>
+            transition-all duration-300'><SiCodeforces size={28}/></span>
         </a>
     </div>
-    <div className='w-[2px] h-32 bg-textDark'></div>
+    <div className='w-[2px] h-60 bg-textDark'></div>
     </motion.div>
 )
 }
