@@ -7,7 +7,7 @@ import { pew, blog, churn } from '@/public/assets'
 
 const Projects = () => {
   return (
-    <div id='projects' className='max-w-contentContainer mx-auto py-10 px-20'>
+    <div id='projects' className='w-[calc(100vw-160px)] mx-auto py-10 px-20'>
       <SectionTitle title="Some things I have built" titleNo='03'/>
 
       <div className='w-full flex flex-col items-center justify-center xl:gap-28 mt-10'>

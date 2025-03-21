@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 const Archive = () => {
     const project1 = ['mern', 'tailwind', 'typescript']
   return (
-    <div className="max-w-contentContainer mx-auto px-4 py-24">
+    <div className="w-[calc(100vw-160px)] mx-auto px-4 py-24">
       <div className="flex flex-col items-center">
         <h2 className="text-3xl font-inter font-semibold">Other Noteworthy Projects</h2>
         <p className="text-sm text-textGreen font-inter">view the archive</p>
