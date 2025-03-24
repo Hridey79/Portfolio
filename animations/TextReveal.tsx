@@ -30,7 +30,7 @@ const TextReveal = ({children}:Props) => {
         }}
         initial = "hidden"
         animate = {textControls}
-        transition = {{duration:0.5,delay:0.25}}
+        transition = {{duration:0.7,delay:0.35}}
         className='p-5'
         >
             {children}

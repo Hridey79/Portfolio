@@ -8,8 +8,8 @@ const Intro = () => {
   return (
     <motion.div 
       id='home' 
-      className='h-[calc(100vh-80px)] mx-auto py-10 mdl:py-24 flex flex-col gap-6 lgl:gap-10 
-       relative md:px-20 w-[calc(100vw-160px)]'
+      className='h-[calc(100vh-80px)] mx-auto py-10 mdl:pt-24 flex flex-col gap-6 lgl:gap-10 
+       relative md:px-20 w-[calc(100vw-160px)] scroll-mt-80'
       initial={{ x: -200, opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
       transition={{ duration: 0.8 }}  

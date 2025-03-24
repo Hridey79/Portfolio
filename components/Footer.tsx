@@ -8,10 +8,10 @@ const Footer = () => {
     <span className='text-md bg-bodyColor rounded-full inline-flex items-center
         justify-center gap-2 hover:text-textGreen cursor-pointer hover:-translate-y-2 
         transition-all duration-300'><IoIosConstruct/>Created by Hridey Verma</span>
-    <br></br>
+    {/* <br></br>
     <span className='text-md bg-bodyColor rounded-full inline-flex items-center
         justify-center gap-2 hover:text-textGreen cursor-pointer hover:-translate-y-2 
-        transition-all duration-300'><MdOutlineDesignServices/>Designed by Brittany Chiang</span>
+        transition-all duration-300'><MdOutlineDesignServices/>Designed by Brittany Chiang</span> */}
     </div>
   )
 }

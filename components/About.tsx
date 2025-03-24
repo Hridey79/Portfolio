@@ -3,22 +3,20 @@ import SectionTitle from './SectionTitle'
 import { AiFillThunderbolt } from 'react-icons/ai'
 import Image from 'next/image'
 import { profile } from '@/public/assets'
+import TypewriterText from '@/animations/TypewriterText'
 
 const About = () => {
 return (
-    <div id='about' className='max-w-containerSmall mx-auto py-10 lgl:py-32 flex flex-col gap-8
-     mdl:px-10 xl:px-2'>
+    <div id='about' className='h-[calc(100vh-80px)] w-[calc(100vw-160px)] mx-auto py-10 lgl:py-32 flex flex-col gap-8
+     mdl:px-15 xl:px-20'>
         <SectionTitle title="About me" titleNo="01"/>
-        <div className='flex flex-col lgl:flex-row gap-16'>
+        <div className='flex flex-col lgl:flex-row gap-16 h-full'>
             <div className='w-full lgl:w-2/3 text-base text-textDark font-medium flex flex-col gap-4'>
-                <p> As a junior web developer, I excel in designing and maintaining apps and responsive 
+                <TypewriterText>As a junior web developer, I excel in designing and maintaining apps and responsive 
                     websites that offer smooth user experience. My expertise lies in crafting, engaging interfaces through
                     writing clean and optimized code. I am also a team player who thrives in collaborating with cross-functional 
-                    teams to produce outstanding web applications.
-                </p>
-                <p>
-                    Here are a few technologies i&apos;ve been working with:
-                </p>
+                    teams to produce outstanding web applications.Here are a few technologies i&apos;ve been working with:
+                </TypewriterText>
                 <ul className='max-w-[450px] text-sm font-inter grid grid-cols-2 gap-2'>
                     <li className='flex items-center gap-2'>
                         <span className='text-textGreen'><AiFillThunderbolt/></span>
