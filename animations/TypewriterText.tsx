@@ -23,7 +23,7 @@ const TypewriterText = ({ children }: { children: string }) => {
           {word.split("").map((letter, letterIndex) => (
             <motion.span
               key={letterIndex}
-              className="relative"
+              className="relative text-lg"
               initial="hidden"
               animate={controls}
               variants={{

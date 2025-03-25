@@ -27,7 +27,7 @@ const Experience = () => {
   return (
     <div id="experience" className='max-w-containerXs mx-auto pb-10 pt-10 mdl:py-24 px-20'>
       <SectionTitle title="Where i have worked" titleNo="02"/>
-      <div className='w-full mt-10 flex flex-col md:flex-row gap-16'>
+      <div className='w-full mt-10 flex flex-col md:flex-row gap-16 ml-10'>
         <ul className='md:w-32 flex flex-col'>
           <li onClick={handleZetech} className={`${workOpenText ? "border-textGreen": "border-hoverColor"}
            border-l-2  text-sm cursor-pointer text-textDark font-medium py-3 px-6

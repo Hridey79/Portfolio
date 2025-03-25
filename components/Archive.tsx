@@ -8,8 +8,8 @@ const Archive = () => {
   return (
     <div className="w-[calc(100vw-160px)] mx-auto px-4 py-24">
       <div className="flex flex-col items-center">
-        <h2 className="text-3xl font-inter font-semibold">Other Noteworthy Projects</h2>
-        <p className="text-sm text-textGreen font-inter">view the archive</p>
+        <h2 className="text-4xl font-inter font-semibold">Other Noteworthy Projects</h2>
+        <p className="text-md text-textGreen font-inter">view the archive</p>
       </div>
       <motion.div
         initial={{opacity: 0}}
