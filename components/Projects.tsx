@@ -62,9 +62,9 @@ const Projects = () => {
             <div className={`w-full xl:w-1/2 flex flex-col gap-6 text-left z-10 ${project.reverse ? 'items-start xl:-mr-24' : 'items-end xl:-ml-24'}`}>
               <p className="text-textGreen font-inter text-sm tracking-wide">Featured Project</p>
               <h3 className="text-2xl font-bold">{project.title}</h3>
-              <p className="bg-[#112240] md:text-base text-sm p-2 md:p-6 rounded-md">
+              <div className="bg-[#112240] md:text-base text-sm p-2 md:p-6 rounded-md">
                <TypewriterText>{project.description}</TypewriterText> 
-              </p>
+              </div>
               
               <ul className="text-xs md:text-sm font-inter tracking-wide flex flex-wrap text-textDark gap-2 md:gap-5">
                 {project.tech.map((tech, i) => (

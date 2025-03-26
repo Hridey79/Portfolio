@@ -14,7 +14,7 @@ const Contact = () => {
       <div className="absolute bottom-40 md:bottom-32 right-12 md:right-32 lg:right-72 w-16 h-16 md:w-24 md:h-24 border-b-4 md:border-b-8 border-r-4 md:border-r-8 border-textGreen"></div>
 
       <motion.h2
-        className="text-textGreen font-semibold tracking-wide text-lg md:text-xl mb-3"
+        className="text-textGreen font-semibold tracking-wide text-xl md:text-xl mb-10"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
@@ -23,7 +23,7 @@ const Contact = () => {
       </motion.h2>
 
       <motion.h1
-        className="text-4xl md:text-5xl font-bold text-white mb-3 md:mb-5"
+        className="text-4xl md:text-6xl font-bold text-textDark mb-3 md:mb-10"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.2 }}
@@ -32,7 +32,7 @@ const Contact = () => {
       </motion.h1>
 
       <motion.p
-        className="text-textDark text-base md:text-lg max-w-[200px] md:max-w-[600px] leading-relaxed"
+        className="text-textDark text-lg md:text-xl max-w-[200px] md:max-w-[600px] leading-relaxed"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.4 }}
@@ -48,14 +48,14 @@ const Contact = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, delay: 0.6 }}
       >
-        <button className="px-6 md:px-8 py-3 md:py-4 border-2 border-textGreen text-textGreen text-lg font-medium rounded-lg transition-all duration-300 shadow-md hover:text-white hover:shadow-textGreen/50 transform hover:scale-105">
+        <button className="px-6 md:px-8 py-3 md:py-4 border-2 border-textGreen text-textGreen text-xl font-medium rounded-lg transition-all duration-300 shadow-md hover:text-white hover:shadow-textGreen/50 transform hover:scale-105">
           Say Hello!
         </button>
       </motion.a>
 
       {/* Footer */}
       <motion.div
-        className="absolute bottom-4 text-textDark text-xs md:text-sm flex items-center gap-2 cursor-pointer hover:text-textGreen transition-all duration-300"
+        className="absolute bottom-4 text-textDark text-sm md:text-md flex items-center gap-2 cursor-pointer hover:text-textGreen transition-all duration-300"
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.8 }}

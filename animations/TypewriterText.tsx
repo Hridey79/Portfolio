@@ -17,7 +17,7 @@ const TypewriterText = ({ children }: { children: string }) => {
   }
 
   return (
-    <p ref={ref} className="mb-2.5 text-base text-textDark font-medium">
+    <div ref={ref} className="mb-2.5 text-base text-textDark font-medium">
       {children.split(" ").map((word, wordIndex) => (
         <span key={wordIndex} className="inline-block whitespace-nowrap mr-1">
           {word.split("").map((letter, letterIndex) => (
@@ -55,7 +55,7 @@ const TypewriterText = ({ children }: { children: string }) => {
           ))}
         </span>
       ))}
-    </p>
+    </div>
   );
 };
 

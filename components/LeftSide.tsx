@@ -7,7 +7,7 @@ import { motion } from 'framer-motion'
 
 const LeftSide = () => { 
 return (
-    <motion.div className='w-full h-full flex flex-col items-center justify-end gap-4 text-textLight'
+    <motion.div className='w-full h-full flex flex-col items-center justify-end gap-4 text-textDark'
         initial={{x: -100}}
         animate={{x: 0}}
         transition={{duration: 0.7}}
