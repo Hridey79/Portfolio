@@ -7,7 +7,13 @@ const WORD_DELAY = 0.15;
 const LETTER_DELAY = 0.025;
 const BOX_FADE_DURATION = 0.125;
 
-const TypewriterText = ({ children, delay = 0 }: { children: string; delay?: number }) => {
+const TypewriterText = ({
+  children,
+  delay = 0,
+}: {
+  children: string;
+  delay?: number;
+}) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const controls = useAnimation();
@@ -38,7 +44,7 @@ const TypewriterText = ({ children, delay = 0 }: { children: string; delay?: num
             {cleanedWord.split("").map((letter, letterIndex) => (
               <motion.span
                 key={letterIndex}
-                className="relative text-lg"
+                className="relative text-md"
                 initial="hidden"
                 animate={controls}
                 variants={{
@@ -46,7 +52,9 @@ const TypewriterText = ({ children, delay = 0 }: { children: string; delay?: num
                   visible: { opacity: 1 },
                 }}
                 transition={{
-                  delay: delay + (wordIndex * WORD_DELAY + letterIndex * LETTER_DELAY),
+                  delay:
+                    delay +
+                    (wordIndex * WORD_DELAY + letterIndex * LETTER_DELAY),
                   duration: 0,
                 }}
               >

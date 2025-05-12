@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import anime from "animejs";
 import { useEffect } from "react";
@@ -11,11 +11,11 @@ const WaterDropGrid = () => {
   );
 };
 
-const GRID_WIDTH = 30;
+const GRID_WIDTH = 25;
 const GRID_HEIGHT = 15;
 
 const DotGrid = () => {
-  const handleDotClick = (e?:any) => {
+  const handleDotClick = (e?: any) => {
     anime({
       targets: ".dot-point",
       scale: [

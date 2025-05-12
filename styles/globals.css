@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'agustina';
-    src: url('/fonts/Agustina-Signature.otf') format('opentype');
+  font-family: "agustina";
+  src: url("/fonts/Agustina-Signature.otf") format("opentype");
 }
 
-*{
+* {
   scroll-behavior: smooth;
 }
 
@@ -22,32 +22,6 @@
   background: #233149;
   border-radius: 5px;
 }
-
-/* .learn-more {
-  position: relative;
-  padding-bottom: 2px;
-  cursor: pointer;
-  width: fit-content;
+.react-terminal-wrapper {
+  padding-top: 35px !important;
 }
-.learn-more::after{
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  background: #64ffda;
-  left: 0;
-  bottom: 0;
-  transition: .1s linear;
-}
-.learn-more:hover::after {
-  width: 100%;
-} */
-/* .sides {
-  display: flex;
-  background: red;
-  width: 1440px;
-}
-.left {
-  flex-basis: 60%;
-  background: green;
-} */
