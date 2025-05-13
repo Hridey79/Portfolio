@@ -8,10 +8,7 @@ import TerminalController from "./Terminal";
 
 const About = () => {
   return (
-    <div
-      id="about"
-      className="h-80vh w-[calc(100vw-160px)] mx-auto py-10 mdl:py-24 flex flex-col mdl:px-15 xl:px-20"
-    >
+    <div className="h-80vh w-[calc(100vw-160px)] mx-auto py-10 mdl:py-24 flex flex-col mdl:px-15 xl:px-20">
       <SectionTitle title="About me" titleNo="01" />
       <div className="flex flex-col lgl:flex-row-reverse gap-5 h-full ml-10">
         {/* Left Section - Text Content */}
