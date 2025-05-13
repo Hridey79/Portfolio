@@ -63,7 +63,7 @@ const About = () => {
           {/* Profile Image */}
           <div className="flex items-center justify-center gap-3">
             <Image
-              src={profile}
+              src={"/assets/images/me.jpeg"}
               alt="Profile"
               className="w-80 h-80 rounded-xl object-cover mb-3"
               width={80}
