@@ -6,12 +6,6 @@ import WaterDropGrid from "@/animations/WaterDropGrid";
 
 const Intro = () => {
   useEffect(() => {
-    if ("scrollRestoration" in history) {
-      history.scrollRestoration = "manual";
-    }
-    if (window.location.hash === "#about") {
-      history.replaceState(null, "", window.location.pathname);
-    }
     window.scrollTo(0, 0);
   }, []);
 

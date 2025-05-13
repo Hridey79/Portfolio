@@ -8,6 +8,7 @@ const Navbar = () => {
   const menuRef = useRef<HTMLDivElement>(null);
 
   const handleScrollTo = (id: string) => {
+    console.log("scroll to", id);
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth", block: "start" });
