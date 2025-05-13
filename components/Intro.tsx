@@ -6,6 +6,12 @@ import WaterDropGrid from "@/animations/WaterDropGrid";
 
 const Intro = () => {
   useEffect(() => {
+    if ("scrollRestoration" in history) {
+      history.scrollRestoration = "manual";
+    }
+    if (window.location.hash === "#about") {
+      history.replaceState(null, "", window.location.pathname);
+    }
     window.scrollTo(0, 0);
   }, []);
 
@@ -39,7 +45,7 @@ const Intro = () => {
           experience in building scalable and user-focused web applications. I
           specialize in crafting high-quality solutions that align with business
           goals and enhance digital experiences.
-          {/* <span
+          <span
             onClick={() => {
               const element = document.getElementById("about");
               if (!element) return;
@@ -49,7 +55,7 @@ const Intro = () => {
             className="text-textGreen hover:underline inline-flex relative cursor-pointer h-9 text-lg sm:text-xl font-semibold pointer-events-auto overflow-x-hidden group w-32 mx-auto md:mx-0 my-5 md:my-0"
           >
             Learn more
-          </span> */}
+          </span>
         </p>
         <a
           href="https://github.com/Hridey79"
