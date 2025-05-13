@@ -55,7 +55,7 @@ const About = () => {
             ))}
           </ul> */}
           {/* Terminal Box */}
-          <div className="w-full max-w-md max-h-44 border border-gray-700 bg-gray-900 rounded-lg shadow-lg p-2 flex flex-col">
+          <div className="w-full max-w-md max-h-[325px] border border-gray-700 bg-gray-900 rounded-lg shadow-lg p-2 flex flex-col overflow-y-auto">
             <TerminalController />
           </div>
         </div>
