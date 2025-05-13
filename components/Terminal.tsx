@@ -1,8 +1,17 @@
+"use client";
+
 import TypewriterText from "@/animations/TypewriterText";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Terminal, { ColorMode, TerminalOutput } from "react-terminal-ui";
 
 const TerminalController: React.FC = () => {
+  useEffect(() => {
+    // Prevent terminal from stealing scroll on mount
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: "auto" });
+    }, 0);
+  }, []);
+
   const [terminalLineData, setTerminalLineData] = useState<JSX.Element[]>([
     <TerminalOutput key="welcome">
       <span className="whitespace-pre-wrap break-words text-xs sm:text-sm max-w-full !-mb-[40rem] !py-0">
