@@ -4,7 +4,7 @@ import React, { useEffect } from "react";
 import SectionTitle from "./SectionTitle";
 import { AiFillThunderbolt } from "react-icons/ai";
 import Image from "next/image";
-import { profile } from "@/public/assets";
+import { profile } from "@/public/assets/images/me.jpeg";
 import TypewriterText from "@/animations/TypewriterText";
 import TerminalController from "./Terminal";
 
@@ -71,7 +71,7 @@ const About = () => {
           {/* Profile Image */}
           <div className="flex items-center justify-center gap-3">
             <Image
-              src={"/assets/images/me.jpeg"}
+              src={profile}
               alt="Profile"
               className="w-80 h-80 rounded-xl object-cover mb-3"
               width={80}
