@@ -53,9 +53,9 @@ const About = () => {
             ))}
           </ul> */}
           {/* Terminal Box */}
-          <div className="w-full max-w-md max-h-44 border border-gray-700 bg-gray-900 rounded-lg shadow-lg p-2 flex flex-col">
+          {/* <div className="w-full max-w-md max-h-44 border border-gray-700 bg-gray-900 rounded-lg shadow-lg p-2 flex flex-col">
             <TerminalController />
-          </div>
+          </div> */}
         </div>
 
         {/* Right Section - Terminal Controller */}
