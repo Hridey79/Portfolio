@@ -35,18 +35,17 @@ const Intro = () => {
           experience in building scalable and user-focused web applications. I
           specialize in crafting high-quality solutions that align with business
           goals and enhance digital experiences.
-          <span
-            onClick={() => {
-              const element = document.getElementById("about");
-              if (!element) return;
-              // Scroll to the "About" section smoothly
-              element.scrollIntoView({ behavior: "smooth", block: "start" });
-            }}
-            className="text-textGreen hover:underline inline-flex relative cursor-pointer h-9 text-lg sm:text-xl font-semibold pointer-events-auto overflow-x-hidden group w-32 mx-auto md:mx-0 my-5 md:my-0"
-          >
-            Learn more
-          </span>
         </p>
+        <span
+          onClick={() => {
+            const element = document.getElementById("about");
+            if (!element) return;
+            element.scrollIntoView({ behavior: "smooth", block: "start" });
+          }}
+          className="text-textGreen hover:underline inline-flex relative cursor-pointer h-9 text-lg sm:text-xl font-semibold pointer-events-auto overflow-x-hidden group w-32 mx-auto md:mx-0 my-5 md:-my-3"
+        >
+          Learn more
+        </span>
         <a
           href="https://github.com/Hridey79"
           target="_blank"
@@ -54,7 +53,7 @@ const Intro = () => {
         >
           <button
             className="text-sm sm:text-lg font-semibold text-textGreen border border-textGreen rounded-xl
-          hover:bg-hoverColor w-52 sm:w-60 h-14 sm:h-16 tracking-wide -mt-10 md:-mt-0"
+          hover:bg-hoverColor w-52 sm:w-60 h-14 sm:h-16 tracking-wide -mt-10 md:-mt-2"
           >
             Check out my projects!
           </button>
