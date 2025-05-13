@@ -1,10 +1,14 @@
 "use client";
 
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect } from "react";
 import { motion } from "framer-motion";
 import WaterDropGrid from "@/animations/WaterDropGrid";
 
 const Intro = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <motion.div
       id="home"
