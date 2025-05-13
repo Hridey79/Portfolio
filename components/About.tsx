@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import SectionTitle from "./SectionTitle";
 import { AiFillThunderbolt } from "react-icons/ai";
 import Image from "next/image";
@@ -9,6 +9,12 @@ import TypewriterText from "@/animations/TypewriterText";
 import TerminalController from "./Terminal";
 
 const About = () => {
+  const [showTerminal, setShowTerminal] = React.useState(false);
+
+  useEffect(() => {
+    setTimeout(() => setShowTerminal(true), 500); // Delay rendering
+  }, []);
+
   return (
     <div
       id="about"
@@ -55,8 +61,8 @@ const About = () => {
             ))}
           </ul> */}
           {/* Terminal Box */}
-          <div className="w-full max-w-md border border-gray-700 bg-gray-900 rounded-lg shadow-lg p-2 flex flex-col">
-            <TerminalController />
+          <div className="w-full max-w-md max-h-44 border border-gray-700 bg-gray-900 rounded-lg shadow-lg p-2 flex flex-col">
+            {showTerminal && <TerminalController />}
           </div>
         </div>
 
