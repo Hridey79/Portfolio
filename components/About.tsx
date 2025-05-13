@@ -4,7 +4,7 @@ import React, { useEffect } from "react";
 import SectionTitle from "./SectionTitle";
 import { AiFillThunderbolt } from "react-icons/ai";
 import Image from "next/image";
-import { profile } from "@/public/assets/images/me.jpeg";
+import profile from "@/public/assets/images/me.jpeg";
 import TypewriterText from "@/animations/TypewriterText";
 import TerminalController from "./Terminal";
 
