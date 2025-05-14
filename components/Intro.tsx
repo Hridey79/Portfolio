@@ -12,29 +12,30 @@ const Intro = () => {
   return (
     <motion.div
       id="home"
-      className="h-[80vh] mx-auto py-10 mdl:pt-24 flex flex-col gap-6 lgl:gap-10 
-       relative md:px-20 w-[calc(100vw-180px)] scroll-mt-80"
+      className="min-h-[80vh] w-full px-4 md:px-10 xl:px-20 py-10 mdl:pt-24 flex flex-col gap-6 lgl:gap-10 relative max-w-[1440px] mx-auto scroll-mt-80"
       initial={{ x: -200, opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
       transition={{ duration: 0.8 }}
     >
-      {/* WaterDrop Grid - Positioned in Background */}
+      {/* WaterDrop Grid */}
       <div className="absolute top-[10%] left-[35%] cursor-crosshair opacity-50 hidden md:block">
         <Suspense>
           <WaterDropGrid />
         </Suspense>
       </div>
 
-      {/* Text Content - Positioned Above Grid */}
-      <div className="relative z-10 flex flex-col gap-10 px-5 md:p-0 md:gap-5 pointer-events-none">
-        <h3 className="text-xl md:text-2xl font-inter text-textGreen tracking-wide w-full md:w-72">
+      {/* Text Content */}
+      <div className="relative z-10 flex flex-col gap-10 md:gap-5 pointer-events-none">
+        <h3 className="text-xl md:text-2xl font-inter text-textGreen tracking-wide">
           Hi, my name is
         </h3>
-        <h1 className="text-3xl md:text-6xl font-inter font-semibold flex flex-col gap-4 w-full md:w-[60rem]">
+
+        <h1 className="text-3xl md:text-6xl font-inter font-semibold flex flex-col gap-4">
           Hridey Verma.
           <span className="text-textDark">I am a Fullstack Developer.</span>
         </h1>
-        <p className="text-base sm:text-lg md:max-w-[700px] font-medium flex flex-col leading-relaxed mx-auto md:mx-0">
+
+        <p className="text-base sm:text-lg md:text-xl font-medium leading-relaxed max-w-3xl">
           I&apos;m a passionate Fullstack Developer with 6 months of hands-on
           experience in building scalable and user-focused web applications. I
           specialize in crafting high-quality solutions that align with business
@@ -42,23 +43,24 @@ const Intro = () => {
           <span
             onClick={() => {
               const element = document.getElementById("about");
-              if (!element) return;
-              // Scroll to the "About" section smoothly
-              element.scrollIntoView({ behavior: "smooth", block: "start" });
+              if (element) {
+                element.scrollIntoView({ behavior: "smooth", block: "start" });
+              }
             }}
-            className="text-textGreen hover:underline inline-flex relative cursor-pointer h-9 text-lg sm:text-xl font-semibold pointer-events-auto overflow-x-hidden group w-32 mx-auto md:mx-0 my-5 md:my-0"
+            className="text-textGreen hover:underline inline-flex relative cursor-pointer h-9 text-lg sm:text-xl font-semibold pointer-events-auto mt-5"
           >
             Learn more
           </span>
         </p>
+
         <a
           href="https://github.com/Hridey79"
           target="_blank"
-          className="w-52 sm:w-60 pointer-events-auto mx-auto md:mx-0"
+          className="pointer-events-auto"
         >
           <button
             className="text-sm sm:text-lg font-semibold text-textGreen border border-textGreen rounded-xl
-          hover:bg-hoverColor w-52 sm:w-60 h-14 sm:h-16 tracking-wide -mt-10 md:-mt-0"
+            hover:bg-hoverColor w-52 sm:w-60 h-14 sm:h-16 tracking-wide"
           >
             Check out my projects!
           </button>
