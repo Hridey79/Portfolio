@@ -18,24 +18,22 @@ const About = () => {
   return (
     <div
       id="about"
-      className="h-80vh w-[calc(100vw-160px)] mx-auto py-10 mdl:py-24 flex flex-col mdl:px-15 xl:px-20"
+      className="w-[calc(100vw-160px)] mx-auto py-10 mdl:py-24 flex flex-col mdl:px-15 xl:px-20"
     >
       <SectionTitle title="About me" titleNo="01" />
       <div className="flex flex-col lgl:flex-row-reverse gap-5 h-full ml-10">
         {/* Left Section - Text Content */}
         <div className="w-full text-textDark font-medium flex flex-col gap-4">
           <TypewriterText>
-            I&apos;m a Software Engineer with 6 months of industry experience,
-            currently working as a **System** **Engineer** **Intern** at
-            **RuDe** **Labs** . I earned my B.E. in Computer Science and
-            Engineering from Chitkara University, graduating with a CGPA of
-            **9.72** . I specialize in building robust and responsive web
-            applications using modern technologies like **React.js** ,
-            **Next.js** , **Node.js** , **HTML** , **CSS** and **JavaScript** .
-            I&apos;m passionate about writing clean, scalable code and creating
-            intuitive user interfaces. I thrive in team environments where
-            collaboration and continuous learning drive innovation and
-            meaningful impact.
+            {`
+I am a passionate Software Engineer with 6 months of hands-on industry experience, currently working as a **Systems** **Engineer** **Intern** at **RuDe** **Labs** . I hold a **B.E.** in **Computer** **Science** and **Engineering** from **Chitkara** **University** , where I graduated with a CGPA of **9.72** .
+
+My expertise lies in building modern, performant, and responsive web applications using technologies like **React.js** , **Next.js** , **Node.js** , **JavaScript** , **HTML** , and **CSS** . I enjoy crafting clean, maintainable code and designing user interfaces that feel intuitive and accessible.
+
+I thrive in collaborative environments that encourage learning, experimentation, and continuous improvement. I'm especially driven by opportunities to bridge the gap between design and development, turning thoughtful ideas into scalable digital experiences.
+
+Outside of work, you’ll often find me reading novels or sharpening my strategic thinking with a game of chess.
+`}
           </TypewriterText>
 
           {/* <TypewriterText delay={7}>
@@ -60,16 +58,12 @@ const About = () => {
               </li>
             ))}
           </ul> */}
-          {/* Terminal Box */}
-          <div className="w-full max-w-md max-h-44 border border-gray-700 bg-gray-900 rounded-lg shadow-lg p-2 flex flex-col">
-            {showTerminal && <TerminalController />}
-          </div>
         </div>
 
         {/* Right Section - Terminal Controller */}
         <div className="w-full lgl:w-[70%] flex flex-col h-full items-start">
           {/* Profile Image */}
-          <div className="flex items-center justify-center gap-3">
+          <div className="flex items-center justify-center gap-3 w-full max-w-[400px]">
             <Image
               src={profile}
               alt="Profile"
@@ -81,9 +75,14 @@ const About = () => {
           </div>
 
           {/* Prompt Text */}
-          <div className="text-textGreen text-sm md:text-base font-semibold my-4 text-center ml-6">
+          <div className="text-textGreen text-sm md:text-base font-semibold my-4 text-center flex flex-col items-center justify-center w-full max-w-[400px]">
             Want to know more about me?
             <br /> You can ask in the terminal.
+          </div>
+
+          {/* Terminal Box */}
+          <div className="w-full max-w-[400px] max-h-44 text-sm border border-gray-700 bg-[rgba(37,42,55,1)] rounded-lg shadow-lg p-2 flex flex-col">
+            {showTerminal && <TerminalController />}
           </div>
         </div>
       </div>

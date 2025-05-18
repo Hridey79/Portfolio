@@ -41,13 +41,13 @@ const Contact = () => {
       </motion.p>
 
       <motion.a
-        href="mailto:muigaigeorge452@gmail.com"
+        href="mailto:hrideykv18@gmail.com"
         className="mt-6 md:mt-8"
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, delay: 0.6 }}
       >
-        <button className="px-6 md:px-8 py-3 md:py-4 border-2 border-textGreen text-textGreen text-xl font-medium rounded-lg transition-all duration-300 shadow-md hover:text-white hover:shadow-textGreen/50 transform hover:scale-105">
+        <button className="px-6 md:px-8 py-3 md:py-4 border-2 border-textGreen text-textGreen text-xl font-medium rounded-lg transition-all duration-300 shadow-md hover:bg-hoverColor hover:shadow-textGreen/50 transform hover:scale-105">
           Say Hello!
         </button>
       </motion.a>

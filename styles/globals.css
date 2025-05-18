@@ -25,3 +25,19 @@
 .react-terminal-wrapper {
   padding-top: 35px !important;
 }
+
+.react-terminal {
+  overflow: visible !important;
+}
+
+.react-terminal-line {
+  font-size: 1rem !important; /* Change to your desired size, e.g. 1rem, 1.25rem, etc. */
+}
+
+.react-terminal-wrapper {
+  font-size: 1rem !important; /* or any desired size like 1.25rem */
+}
+
+.react-terminal-input-area {
+  font-size: 1rem !important;
+}

@@ -29,12 +29,13 @@ const TerminalController: React.FC = () => {
         newLine = (
           <TerminalOutput key={Date.now()}>
             <span className="whitespace-pre-wrap break-words text-xs sm:text-sm max-w-full">
-              {`Available commands:
+              <TypewriterText delay={0} small={true}>
+                {`Available commands:
 - aboutMe: Learn more about me
-- contacts: Get my contact details
-- explainProjects: Overview of my projects
 - studyDetails: My educational background
+- contacts: Get my contact details
 - clear: Clear the terminal`}
+              </TypewriterText>
             </span>
           </TerminalOutput>
         );
@@ -43,11 +44,10 @@ const TerminalController: React.FC = () => {
       case "aboutme":
         newLine = (
           <TerminalOutput key={Date.now()}>
-            <span className="whitespace-pre-wrap break-words p-1 text-xs sm:text-sm max-w-full">
-              👋
-              <TypewriterText>
+            <span className="whitespace-pre-wrap break-words p-1 text-xs sm:text-sm!important max-w-full">
+              <TypewriterText delay={0} small={true}>
                 {
-                  "Hi! I'm Hridey Verma, a passionate web developer focusing on Next.js and React."
+                  "Hi! I'm Hridey Verma, a passionate web developer focusing on Next.js and React. I also have some experience working with backend technologies like Node.js and Express. I enjoy creating modern, responsive web applications and am always eager to learn new technologies and improve my skills. In my free time, I love reading novels and playing chess."
                 }
               </TypewriterText>
             </span>
@@ -59,36 +59,42 @@ const TerminalController: React.FC = () => {
         newLine = (
           <TerminalOutput key={Date.now()}>
             <span className="whitespace-pre-wrap break-words text-xs sm:text-sm max-w-full">
-              📧
-              <TypewriterText>{` Email: hrideykv18@gmail.com`}</TypewriterText>
+              <TypewriterText
+                delay={0}
+                small={true}
+              >{` Email: hrideykv18@gmail.com\n Phone no.: +91 9041891005`}</TypewriterText>
             </span>
           </TerminalOutput>
         );
         break;
 
-      case "explainprojects":
-        newLine = (
-          <TerminalOutput key={Date.now()}>
-            <span className="whitespace-pre-wrap break-words text-xs sm:text-sm max-w-full">
-              🚀
-              <TypewriterText>{` I’ve worked on various projects including:
-- Hotel Booking App (MERN)
-- Live Score App (Android, Java)
-- Movie App (Android, Java)
-- Recipe App (API-based)`}</TypewriterText>
-            </span>
-          </TerminalOutput>
-        );
-        break;
+      //       case "explainprojects":
+      //         newLine = (
+      //           <TerminalOutput key={Date.now()}>
+      //             <span className="whitespace-pre-wrap break-words text-xs sm:text-sm max-w-full">
+      //               <TypewriterText
+      //                 delay={0}
+      //                 small={true}
+      //               >{` I’ve worked on various projects including:
+      // - Learning Management System (LMS) (MERN Stack)
+      // - Live Score App (Android, Java)
+      // - Movie App (Android, Java)
+      // - Recipe App (API-based)`}</TypewriterText>
+      //             </span>
+      //           </TerminalOutput>
+      //         );
+      //         break;
 
       case "studydetails":
         newLine = (
           <TerminalOutput key={Date.now()}>
             <span className="whitespace-pre-wrap break-words text-xs sm:text-sm max-w-full">
-              🎓
-              <TypewriterText>
-                I studied Computer Science and was part of the Google Developer
-                Students Club, contributing to the ML team.
+              <TypewriterText delay={0} small={true}>
+                {`Education Details:
+- Completed 10th grade from D.A.V School, Malerkotla, Punjab with 90%.
+- Completed 12th grade from A.K.S.I.P.S School, Chandigarh with 83.80%.
+- Graduated with a Bachelor's degree in Computer Science Engineering from Chitkara University, Rajpura with a CGPA of 9.72.
+- Actively participated in the Google Developer Students Club, contributing as a member of the Machine Learning team.`}
               </TypewriterText>
             </span>
           </TerminalOutput>
@@ -104,7 +110,7 @@ const TerminalController: React.FC = () => {
           <TerminalOutput key={Date.now()}>
             <span className="whitespace-pre-wrap break-words text-xs sm:text-sm max-w-full">
               ❌
-              <TypewriterText>
+              <TypewriterText delay={0} small={true}>
                 {` Unknown command: "${terminalInput}"
 Type "help" to see available commands.`}
               </TypewriterText>
@@ -117,7 +123,7 @@ Type "help" to see available commands.`}
   };
 
   return (
-    <div className="w-full overflow-y-auto text-sm">
+    <div className="w-full overflow-y-auto text-xs">
       <Terminal colorMode={ColorMode.Dark} onInput={handleInput}>
         {terminalLineData}
       </Terminal>

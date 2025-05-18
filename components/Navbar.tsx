@@ -69,13 +69,9 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <a
-            href="assets/George resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">
             <motion.button
-              className="text-textGreen border border-textGreen px-2 sm:px-3 py-1.5 sm:py-2 rounded-lg hover:bg-hoverColor text-xs sm:text-sm md:text-base"
+              className="text-textGreen border border-textGreen px-2 sm:px-3 py-1.5 sm:py-2 rounded-lg shadow-md hover:bg-hoverColor hover:shadow-textGreen/50 transform hover:scale-105 text-xs sm:text-sm md:text-base"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6 }}

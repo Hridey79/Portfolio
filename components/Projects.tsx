@@ -3,39 +3,64 @@ import SectionTitle from "./SectionTitle";
 import Image from "next/image";
 import { FiGithub } from "react-icons/fi";
 import { RxOpenInNewWindow } from "react-icons/rx";
-import { pew, blog, churn } from "@/public/assets";
+import {
+  pew,
+  blog,
+  churn,
+  interview,
+  pathFinder,
+  LMS,
+  spotify,
+  Oscar,
+} from "@/public/assets";
 import TypewriterText from "@/animations/TypewriterText";
 
 const Projects = () => {
   const projects = [
     {
-      title: "Sports Wear",
+      title: "Learning Management System",
       description:
-        "An e-commerce sports wear website for visualizing personalized Amazon website. View your products, add your account with OAuth, and make purchases using Stripe.",
-      image: pew,
-      tech: ["Next.js", "React", "TypeScript", "Stripe", "Tailwind CSS"],
-      github: "https://github.com/GeorgeMuigai",
-      demo: "#",
+        "A web-based platform for managing and delivering educational courses. It includes features for user authentication, course creation, and progress tracking.",
+      image: LMS,
+      tech: ["React", "Express", "MongoDb", "Stripe", "NodeJs", "Tailwind CSS"],
+      github: "https://github.com/Hridey79/LMS",
       reverse: false,
     },
     {
-      title: "Amd Eats",
+      title: "Algorithm Visualizer",
       description:
-        "An Android food delivery app where restaurant owners can add new food items and view orders. Users can browse restaurants, view cuisines, and add food to their cart.",
-      image: churn,
-      tech: ["Java", "Retrofit", "Firebase", "Google Maps"],
-      github: "https://github.com/GeorgeMuigai",
-      demo: "#",
+        "A web-based tool for visualizing algorithms and data structures. Users can interactively explore various algorithms and their complexities.",
+      image: pathFinder,
+      tech: ["HTML", "CSS", "Javascript"],
+      github: "https://github.com/Hridey79/Path-Finding-Algo-Visualizer",
+      demo: "https://hridey79.github.io/Path-Finding-Algo-Visualizer/",
       reverse: true,
     },
     {
-      title: "Fashion Wear",
+      title: "Spotify Clone",
       description:
-        "An e-commerce fashion wear website similar to Amazon. Users can view products, add accounts with OAuth, and make purchases using Stripe.",
-      image: blog,
-      tech: ["Next.js", "React", "TypeScript", "Stripe", "Tailwind CSS"],
-      github: "https://github.com/GeorgeMuigai",
-      demo: "#",
+        "A web-based application that allows users to stream music, create playlists, and discover new artists. It features user authentication and a responsive design.",
+      image: spotify,
+      tech: ["Next.js", "Supabase", "TypeScript", "Stripe", "Tailwind CSS"],
+      github: "https://github.com/Hridey79/Spotify_Clone",
+      reverse: false,
+    },
+    {
+      title: "Oscar's Adventure",
+      description:
+        "A platformer game where players control Oscar, a character navigating through various levels filled with challenges and enemies. The game features smooth animations and engaging gameplay.",
+      image: Oscar,
+      tech: ["Python", "Pygame"],
+      github: "https://github.com/Hridey79/Oscar-s-Adventure",
+      reverse: true,
+    },
+    {
+      title: "PrepWise: Interview Preparation App",
+      description:
+        "A web application designed to help users prepare for interviews. It uses Vapi's api for talking firebase for backend and google gemini api.",
+      image: interview,
+      tech: ["NextJS", "Gemini API", "Vapi API", "Firebase"],
+      github: "https://github.com/Hridey79/interview_prep_app",
       reverse: false,
     },
   ];
@@ -57,7 +82,7 @@ const Projects = () => {
           >
             {/* Image Section */}
             <a
-              href={project.demo}
+              href={project.github}
               target="_blank"
               className="w-full xl:w-1/2 relative"
             >
@@ -102,13 +127,15 @@ const Projects = () => {
                 >
                   <FiGithub />
                 </a>
-                <a
-                  href={project.demo}
-                  target="_blank"
-                  className="hover:text-textGreen group relative w-auto"
-                >
-                  <RxOpenInNewWindow />
-                </a>
+                {project.demo && (
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    className="hover:text-textGreen group relative w-auto"
+                  >
+                    <RxOpenInNewWindow />
+                  </a>
+                )}
               </div>
             </div>
           </div>
