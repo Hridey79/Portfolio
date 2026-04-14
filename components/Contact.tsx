@@ -1,66 +1,115 @@
+"use client";
+
 import React from "react";
-import { IoIosConstruct } from "react-icons/io";
 import { motion } from "framer-motion";
+import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
+import { SiLeetcode } from "react-icons/si";
+import { IoIosConstruct } from "react-icons/io";
 
 const Contact = () => {
   return (
     <section
-      className="h-[80vh] w-full flex flex-col items-center justify-center text-center px-6 relative overflow-hidden"
+      className="w-full max-w-[600px] mx-auto py-16 md:py-24 px-4 sm:px-6 flex flex-col items-center text-center"
       id="contact"
     >
-      {/* Decorative L-shaped brackets */}
-      <div className="absolute top-30 md:top-20 left-12 md:left-32 lg:left-60 w-16 h-16 md:w-24 md:h-24 border-t-4 md:border-t-8 border-l-4 md:border-l-8 border-textGreen"></div>
-      <div className="absolute bottom-30 md:bottom-20 right-12 md:right-32 lg:right-60 w-16 h-16 md:w-24 md:h-24 border-b-4 md:border-b-8 border-r-4 md:border-r-8 border-textGreen"></div>
-
-      <motion.h2
-        className="text-textGreen font-semibold tracking-wide text-xl md:text-xl mb-10"
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-      >
-        03. What’s Next?
-      </motion.h2>
-
-      <motion.h1
-        className="text-4xl md:text-6xl font-bold text-textDark mb-3 md:mb-10"
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 0.2 }}
-      >
-        Get In Touch
-      </motion.h1>
-
+      {/* Section Number */}
       <motion.p
-        className="text-textDark text-lg md:text-xl max-w-[200px] md:max-w-[600px] leading-relaxed"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 0.4 }}
+        className="text-textGreen font-inter text-sm md:text-base tracking-wide mb-4"
+        initial={{ opacity: 0, y: -10 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
       >
-        Whether you have a question or just want to say hi, my inbox is always
-        open. I’ll do my best to get back to you!
+        04. What&apos;s Next?
       </motion.p>
 
+      {/* Title */}
+      <motion.h2
+        className="text-3xl sm:text-4xl md:text-5xl font-bold text-textLight mb-4 md:mb-6"
+        initial={{ opacity: 0, y: -10 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+      >
+        Get In Touch
+      </motion.h2>
+
+      {/* Description */}
+      <motion.p
+        className="text-textDark text-base md:text-lg max-w-[450px] leading-relaxed mb-8 md:mb-10"
+        initial={{ opacity: 0, y: 10 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+      >
+        I&apos;m currently looking for new opportunities. Whether you have a
+        question, a project idea, or just want to say hi — my inbox is always
+        open and I&apos;ll do my best to get back to you!
+      </motion.p>
+
+      {/* CTA Button */}
       <motion.a
         href="mailto:hrideykv18@gmail.com"
-        className="mt-6 md:mt-8"
-        initial={{ opacity: 0, scale: 0.9 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.8, delay: 0.6 }}
+        initial={{ opacity: 0, y: 10 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.3 }}
       >
-        <button className="px-6 md:px-8 py-3 md:py-4 border-2 border-textGreen text-textGreen text-xl font-medium rounded-lg transition-all duration-300 shadow-md hover:bg-hoverColor hover:shadow-textGreen/50 transform hover:scale-105">
-          Say Hello!
+        <button className="px-8 py-4 border border-textGreen text-textGreen text-base font-inter rounded transition-all duration-300 hover:bg-hoverColor hover:shadow-[4px_4px_0_0_#64ffda] hover:-translate-x-[3px] hover:-translate-y-[3px]">
+          Say Hello
         </button>
       </motion.a>
 
-      {/* Footer */}
+      {/* Social Links - visible on mobile since sidebars are hidden */}
       <motion.div
-        className="absolute bottom-4 text-textDark text-sm md:text-md flex items-center gap-2 cursor-pointer hover:text-textGreen transition-all duration-300"
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 0.8 }}
+        className="flex xl:hidden items-center gap-6 mt-12 text-textDark"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.4 }}
       >
-        <IoIosConstruct className="text-base md:text-lg" />
-        <span>Created by Hridey Verma</span>
+        <a
+          href="https://github.com/Hridey79"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-textGreen hover:-translate-y-1 transition-all duration-300"
+        >
+          <FiGithub size={22} />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/hridey-verma-67633a225/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-textGreen hover:-translate-y-1 transition-all duration-300"
+        >
+          <FiLinkedin size={22} />
+        </a>
+        <a
+          href="https://leetcode.com/Hridey79/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-textGreen hover:-translate-y-1 transition-all duration-300"
+        >
+          <SiLeetcode size={22} />
+        </a>
+        <a
+          href="mailto:hrideykv18@gmail.com"
+          className="hover:text-textGreen hover:-translate-y-1 transition-all duration-300"
+        >
+          <FiMail size={22} />
+        </a>
+      </motion.div>
+
+      {/* Footer Credit */}
+      <motion.div
+        className="mt-16 md:mt-24 text-textDark text-xs font-inter flex items-center gap-2 hover:text-textGreen transition-all duration-300"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.5 }}
+      >
+        <IoIosConstruct className="text-sm" />
+        <span>Built by Hridey Verma</span>
       </motion.div>
     </section>
   );

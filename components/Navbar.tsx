@@ -50,7 +50,7 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-4 lg:gap-7 items-center">
           <ul className="flex text-xs sm:text-sm md:text-base gap-3 lg:gap-7">
-            {["home", "about", "projects", "contact"].map((section, index) => (
+            {["home", "about", "experience", "projects", "contact"].map((section, index) => (
               <li
                 key={section}
                 onClick={() => handleScrollTo(section)}
@@ -122,7 +122,7 @@ const Navbar = () => {
                 className="relative w-11/12 max-w-xs bg-bodyColor shadow-xl rounded-lg p-6 text-center"
               >
                 <ul className="flex flex-col gap-6 text-lg text-textDark">
-                  {["home", "about", "projects", "contact"].map(
+                  {["home", "about", "experience", "projects", "contact"].map(
                     (section, index) => (
                       <motion.li
                         key={section}

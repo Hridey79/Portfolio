@@ -7,6 +7,7 @@ import Image from "next/image";
 import profile from "@/public/assets/images/me.jpeg";
 import TypewriterText from "@/animations/TypewriterText";
 import TerminalController from "./Terminal";
+import StaticText from "@/animations/StaticText";
 
 const About = () => {
   const [showTerminal, setShowTerminal] = React.useState(false);
@@ -18,15 +19,15 @@ const About = () => {
   return (
     <div
       id="about"
-      className="w-[calc(100vw-160px)] mx-auto py-10 mdl:py-24 flex flex-col mdl:px-15 xl:px-20"
+      className="w-full max-w-[calc(100vw-40px)] md:max-w-[calc(100vw-160px)] mx-auto py-10 mdl:py-24 flex flex-col px-2 sm:px-4 mdl:px-15 xl:px-20"
     >
       <SectionTitle title="About me" titleNo="01" />
-      <div className="flex flex-col lgl:flex-row-reverse gap-5 h-full ml-10">
+      <div className="flex flex-col lgl:flex-row-reverse gap-5 h-full ml-0 md:ml-10">
         {/* Left Section - Text Content */}
         <div className="w-full text-textDark font-medium flex flex-col gap-4">
-          <TypewriterText>
+          <StaticText>
             {`
-I am a passionate Software Engineer with 6 months of hands-on industry experience, currently working as a **Systems** **Engineer** **Intern** at **RuDe** **Labs** . I hold a **B.E.** in **Computer** **Science** and **Engineering** from **Chitkara** **University** , where I graduated with a CGPA of **9.72** .
+I am a passionate Software Engineer currently working as a **Systems** **Engineer** at **RuDe** **Labs** . I hold a **B.E.** in **Computer** **Science** and **Engineering** from **Chitkara** **University** , where I graduated with a CGPA of **9.72** .
 
 My expertise lies in building modern, performant, and responsive web applications using technologies like **React.js** , **Next.js** , **Node.js** , **JavaScript** , **HTML** , and **CSS** . I enjoy crafting clean, maintainable code and designing user interfaces that feel intuitive and accessible.
 
@@ -34,7 +35,7 @@ I thrive in collaborative environments that encourage learning, experimentation,
 
 Outside of work, you’ll often find me reading novels or sharpening my strategic thinking with a game of chess.
 `}
-          </TypewriterText>
+          </StaticText>
 
           {/* <TypewriterText delay={7}>
         My expertise lies in designing, developing, and maintaining applications and responsive websites that offer seamless user experiences. I focus on writing clean, optimized code while ensuring intuitive and engaging interfaces. I thrive in collaborative environments, working closely with cross-functional teams to build impactful web applications.
@@ -67,7 +68,7 @@ Outside of work, you’ll often find me reading novels or sharpening my strategi
             <Image
               src={profile}
               alt="Profile"
-              className="w-80 h-80 rounded-xl object-cover mb-3"
+              className="w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-xl object-cover mb-3"
               width={80}
               height={80}
               priority

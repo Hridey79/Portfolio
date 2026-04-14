@@ -1,10 +1,8 @@
-'use client'
-
-import React, { useEffect, useRef } from 'react'
-import { motion, useAnimation, useInView } from 'framer-motion'
+import React, { useEffect, useRef } from "react";
+import { motion, useAnimation, useInView } from "framer-motion";
 
 interface Props {
-  children: React.ReactNode,
+  children: React.ReactNode;
 }
 
 const TextReveal = ({ children }: Props) => {
@@ -21,17 +19,20 @@ const TextReveal = ({ children }: Props) => {
   }, [isInView]);
 
   return (
-    <div ref={textRef} style={{ position: "relative", width: "fit-content", overflow: "hidden" }}>
+    <div
+      ref={textRef}
+      style={{ position: "relative", width: "100%", maxWidth: "fit-content", overflow: "hidden" }}
+    >
       {/* Text animation */}
       <motion.div
         variants={{
           hidden: { opacity: 0, y: 75 },
-          visible: { opacity: 1, y: 0 }
+          visible: { opacity: 1, y: 0 },
         }}
         initial="hidden"
         animate={textControls}
         transition={{ duration: 0.7, delay: 0.15 }} // Reduced delay from 0.35 to 0.15
-        className='p-5'
+        className="p-5"
       >
         {children}
       </motion.div>
@@ -40,7 +41,7 @@ const TextReveal = ({ children }: Props) => {
       <motion.div
         variants={{
           hidden: { left: 0 },
-          visible: { left: "100%" }
+          visible: { left: "100%" },
         }}
         initial="hidden"
         animate={slideControls}
@@ -52,11 +53,11 @@ const TextReveal = ({ children }: Props) => {
           left: 0,
           right: 0,
           zIndex: 20,
-          backgroundColor: "#64ffda"
+          backgroundColor: "#64ffda",
         }}
       />
     </div>
-  )
-}
+  );
+};
 
 export default TextReveal;

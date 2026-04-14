@@ -17,7 +17,7 @@ const ArchiveCard = ({
   github,
 }: propsTypes) => {
   return (
-    <div className="w-full h-[290px] rounded-lg bg-[#112240] p-7 flex flex-col gap-6 hover:-translate-y-2 transition-transform duration-300 group">
+    <div className="w-full min-h-[290px] h-auto rounded-lg bg-[#112240] p-4 sm:p-7 flex flex-col gap-4 sm:gap-6 hover:-translate-y-2 transition-transform duration-300 group">
       <div className="flex justify-between">
         <a href={github} target="_blank" className="text-3xl text-textGreen">
           <FaRegFolder />

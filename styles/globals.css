@@ -31,13 +31,37 @@
 }
 
 .react-terminal-line {
-  font-size: 1rem !important; /* Change to your desired size, e.g. 1rem, 1.25rem, etc. */
+  font-size: 0.75rem !important;
 }
 
 .react-terminal-wrapper {
-  font-size: 1rem !important; /* or any desired size like 1.25rem */
+  font-size: 0.75rem !important;
 }
 
 .react-terminal-input-area {
-  font-size: 1rem !important;
+  font-size: 0.75rem !important;
+}
+
+@media (min-width: 640px) {
+  .react-terminal-line {
+    font-size: 0.875rem !important;
+  }
+  .react-terminal-wrapper {
+    font-size: 0.875rem !important;
+  }
+  .react-terminal-input-area {
+    font-size: 0.875rem !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .react-terminal-line {
+    font-size: 1rem !important;
+  }
+  .react-terminal-wrapper {
+    font-size: 1rem !important;
+  }
+  .react-terminal-input-area {
+    font-size: 1rem !important;
+  }
 }

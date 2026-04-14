@@ -3,17 +3,7 @@ import SectionTitle from "./SectionTitle";
 import Image from "next/image";
 import { FiGithub } from "react-icons/fi";
 import { RxOpenInNewWindow } from "react-icons/rx";
-import {
-  pew,
-  blog,
-  churn,
-  interview,
-  pathFinder,
-  LMS,
-  spotify,
-  Oscar,
-} from "@/public/assets";
-import TypewriterText from "@/animations/TypewriterText";
+import { interview, pathFinder, LMS, spotify, Oscar } from "@/public/assets";
 
 const Projects = () => {
   const projects = [
@@ -68,11 +58,11 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="w-[calc(100vw-160px)] mx-auto py-10 mdl:py-24 px-20"
+      className="w-full max-w-[calc(100vw-40px)] md:max-w-[calc(100vw-160px)] mx-auto py-10 mdl:py-24 px-2 sm:px-4 md:px-20"
     >
-      <SectionTitle title="Some things I have built" titleNo="02" />
+      <SectionTitle title="Some things I have built" titleNo="03" />
 
-      <div className="w-full flex flex-col items-center justify-center xl:gap-28 mt-10 ml-10">
+      <div className="w-full flex flex-col items-center justify-center xl:gap-28 mt-10 ml-0 md:ml-10">
         {projects.map((project, index) => (
           <div
             key={index}
@@ -86,7 +76,7 @@ const Projects = () => {
               target="_blank"
               className="w-full xl:w-1/2 relative"
             >
-              <div className="h-[400px] w-full overflow-hidden">
+              <div className="h-[200px] sm:h-[300px] md:h-[400px] w-full overflow-hidden">
                 <Image
                   className="w-full object-contain cursor-pointer translate-y-0"
                   src={project.image}
@@ -97,10 +87,10 @@ const Projects = () => {
 
             {/* Content Section */}
             <div
-              className={`w-full xl:w-1/2 flex flex-col gap-6 text-left z-10 ${
+              className={`w-full xl:w-1/2 flex flex-col gap-4 md:gap-6 text-left z-10 ${
                 project.reverse
                   ? "items-start xl:-mr-24"
-                  : "items-end xl:-ml-24"
+                  : "items-start xl:items-end xl:-ml-24"
               }`}
             >
               <p className="text-textGreen font-inter text-sm tracking-wide">
@@ -108,7 +98,7 @@ const Projects = () => {
               </p>
               <h3 className="text-2xl font-bold">{project.title}</h3>
               <div className="bg-[#112240] md:text-base text-sm p-2 md:p-6 rounded-md">
-                <TypewriterText>{project.description}</TypewriterText>
+                {project.description}
               </div>
 
               <ul className="text-xs md:text-sm font-inter tracking-wide flex flex-wrap text-textDark gap-2 md:gap-5">

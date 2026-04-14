@@ -14,7 +14,7 @@ interface Props {
 const SectionTitle = ({ title, titleNo }: Props) => {
   return (
     <TextReveal>
-      <h2 className="font-inter text-5xl font-semibold flex items-center mb-3">
+      <h2 className="font-inter text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold flex items-center mb-3">
         <span className="inline-block text-lg md:text-4xl text-textGreen mr-5">
           {titleNo}.
         </span>

@@ -60,9 +60,9 @@ const Archive = () => {
   ];
 
   return (
-    <div className="w-[calc(100vw-160px)] mx-auto px-4 py-24">
+    <div className="w-full max-w-[calc(100vw-40px)] md:max-w-[calc(100vw-160px)] mx-auto px-2 sm:px-4 py-12 md:py-24">
       <div className="flex flex-col items-center">
-        <h2 className="text-4xl font-inter font-semibold">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-inter font-semibold text-center">
           Other Noteworthy Projects
         </h2>
         <a href="https://github.com/Hridey79" target="_blank">

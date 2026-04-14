@@ -12,8 +12,8 @@ const Intro = () => {
   return (
     <motion.div
       id="home"
-      className="h-[80vh] mx-auto py-10 mdl:pt-24 flex flex-col gap-6 lgl:gap-10 
-       relative md:px-20 w-[calc(100vw-180px)] scroll-mt-80"
+      className="h-[80vh] mx-auto py-10 mdl:pt-24 flex flex-col gap-6 lgl:gap-10
+       relative px-4 sm:px-8 md:px-20 w-full max-w-[calc(100vw-40px)] md:max-w-[calc(100vw-180px)] scroll-mt-80"
       initial={{ x: -200, opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
       transition={{ duration: 0.8 }}
@@ -30,7 +30,7 @@ const Intro = () => {
         <h3 className="text-xl md:text-2xl 3xl:text-3xl font-inter text-textGreen tracking-wide w-full md:w-72">
           Hi, my name is
         </h3>
-        <h1 className="text-3xl md:text-6xl 3xl:text-7xl font-inter font-semibold flex flex-col gap-4 w-full md:w-[60rem] 3xl:w-[80rem]">
+        <h1 className="text-2xl sm:text-3xl md:text-6xl 3xl:text-7xl font-inter font-semibold flex flex-col gap-2 sm:gap-4 w-full md:w-[60rem] 3xl:w-[80rem]">
           Hridey Verma.
           <span className="text-textDark">I am a Fullstack Developer.</span>
         </h1>
@@ -46,7 +46,7 @@ const Intro = () => {
               // Scroll to the "About" section smoothly
               element.scrollIntoView({ behavior: "smooth", block: "start" });
             }}
-            className="text-textGreen hover:underline inline-flex relative cursor-pointer h-9 text-lg sm:text-xl font-semibold pointer-events-auto overflow-x-hidden group w-32 mx-auto md:mx-0 my-5 md:my-0"
+            className="text-textGreen hover:underline inline-flex relative cursor-pointer h-9 text-base sm:text-lg md:text-xl font-semibold pointer-events-auto overflow-x-hidden group w-32 mx-auto md:mx-0 my-3 md:my-0"
           >
             Learn more
           </span>

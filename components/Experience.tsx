@@ -1,52 +1,110 @@
-'use client'
+"use client";
 
-import {useState} from 'react'
-import SectionTitle from './SectionTitle'
-import OpenText from './works/OpenText'
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import SectionTitle from "./SectionTitle";
+import { TiArrowForward } from "react-icons/ti";
+
+const experiences = [
+  {
+    company: "RuDe Labs",
+    title: "Systems Engineer",
+    range: "July 2025 - Present",
+    url: "https://rudelabs.in",
+    points: [
+      "Sigma Earth – Architected an AI-driven ESG reporting platform using React.js, TypeScript, Firebase, and Gemini API.",
+      "WAPS – Designed a monitoring & emergency response portal with role-based workflows, real-time alert handling from mobile apps, and centralized monitoring.",
+      "Built a full-stack Influencer–Brand platform using Next.js, React Native, Supabase, and Meta API for campaign workflows.",
+      "Created a Cricket App in React Native integrating APIs for real-time scores and player statistics.",
+    ],
+  },
+  {
+    company: "RuDe Labs",
+    companyLabel: "RuDe Labs (Trainee)",
+    title: "Systems Engineer Trainee",
+    range: "Dec 2024 - June 2025",
+    url: "https://rudelabs.in",
+    points: [
+      "FinRaces – Designed a real-time stock prediction platform using React.js, TypeScript, and Firebase with dashboards, leaderboards, and watchlists with live updates.",
+      "Sustrack – Built an ESG reporting platform using React.js, Firebase, and Chart.js with automated report generation workflows, reducing manual reporting effort.",
+    ],
+  },
+];
 
 const Experience = () => {
-  const [workOpenText, setOpenText] = useState(true)
-    const [workTest, setWorkTest] = useState(false)
-    const [workLorem, setWorkLorem] = useState(false)
+  const [activeTab, setActiveTab] = useState(0);
 
-    const handleZetech = () => {
-       setOpenText(true)
-        setWorkTest(false)
-        setWorkLorem(false)
-    }
-    const handleTest = () => {
-        setOpenText(false)
-        setWorkTest(true)
-        setWorkLorem(false)
-    }
-    const handleLorem = () => {
-        setOpenText(false)
-        setWorkTest(false)
-        setWorkLorem(true)
-    }
   return (
-    <div id="experience" className='max-w-containerXs mx-auto pb-10 pt-10 mdl:py-24 px-20'>
-      <SectionTitle title="Where i have worked" titleNo="02"/>
-      <div className='w-full mt-10 flex flex-col md:flex-row gap-16 ml-10'>
-        <ul className='md:w-32 flex flex-col'>
-          <li onClick={handleZetech} className={`${workOpenText ? "border-textGreen": "border-hoverColor"}
-           border-l-2  text-sm cursor-pointer text-textDark font-medium py-3 px-6
-           hover:bg-[#112240]`}>OpenText</li>
+    <div
+      id="experience"
+      className="w-full max-w-[calc(100vw-40px)] md:max-w-[calc(100vw-160px)] mx-auto py-10 mdl:py-24 px-2 sm:px-4 md:px-20"
+    >
+      <SectionTitle title="Where I have worked" titleNo="02" />
 
-          <li onClick={handleTest} className={`${workTest ? "border-textGreen": "border-hoverColor"} 
-           border-l-2  text-sm cursor-pointer text-textDark font-medium py-3 px-6 hover:bg-[#112240]`}>
-            OpenText
-          </li>
+      <div className="w-full mt-10 flex flex-col md:flex-row gap-4 md:gap-10 ml-0 md:ml-10">
+        {/* Tab List */}
+        <div className="relative flex md:flex-col overflow-x-auto md:overflow-x-visible scrollbar-none">
+          {experiences.map((exp, index) => (
+            <button
+              key={index}
+              onClick={() => setActiveTab(index)}
+              className={`relative whitespace-nowrap text-sm font-inter px-5 py-3 text-left transition-all duration-300 border-b-2 md:border-b-0 md:border-l-2 hover:bg-hoverColor hover:text-textGreen ${
+                activeTab === index
+                  ? "text-textGreen border-textGreen bg-hoverColor"
+                  : "text-textDark border-gray-700"
+              }`}
+            >
+              {(exp as any).companyLabel || exp.company}
+            </button>
+          ))}
+        </div>
 
-          <li onClick={handleLorem} className={`${workLorem ? "border-textGreen": "border-hoverColor"} 
-          border-l-2  text-sm cursor-pointer text-textDark font-medium py-3 px-6 hover:bg-[#112240]`}>
-            OpenText
-          </li>
-        </ul>
-        { workOpenText && <OpenText/> }
+        {/* Tab Content */}
+        <div className="w-full min-h-[250px]">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={activeTab}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.25 }}
+            >
+              <h3 className="text-lg md:text-xl font-medium font-inter">
+                {experiences[activeTab].title}{" "}
+                <a
+                  href={experiences[activeTab].url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-textGreen hover:underline"
+                >
+                  @{experiences[activeTab].company}
+                </a>
+              </h3>
+              <p className="text-sm mt-1 font-medium text-textDark font-inter tracking-wide">
+                {experiences[activeTab].range}
+              </p>
+              <ul className="mt-6 flex flex-col gap-3">
+                {experiences[activeTab].points.map((point, i) => (
+                  <motion.li
+                    key={i}
+                    initial={{ opacity: 0, x: -10 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.3, delay: i * 0.1 }}
+                    className="flex gap-3 text-textDark text-sm md:text-base leading-relaxed"
+                  >
+                    <span className="text-textGreen mt-1 shrink-0">
+                      <TiArrowForward />
+                    </span>
+                    {point}
+                  </motion.li>
+                ))}
+              </ul>
+            </motion.div>
+          </AnimatePresence>
+        </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Experience
+export default Experience;

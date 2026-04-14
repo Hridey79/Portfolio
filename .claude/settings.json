@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/hride/OneDrive/Desktop/v4/src/**)",
+      "Read(//c/Users/hride/OneDrive/Desktop/v4/**)",
+      "Bash(npx next:*)"
+    ]
+  }
+}
