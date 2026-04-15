@@ -35,10 +35,10 @@ const Intro = () => {
           <span className="text-textDark">I am a Fullstack Developer.</span>
         </h1>
         <p className="text-base sm:text-lg 3xl:text-xl md:max-w-[700px] 3xl:max-w-[900px] font-medium flex flex-col leading-relaxed mx-auto md:mx-0">
-          I&apos;m a passionate Fullstack Developer with 6 months of hands-on
-          experience in building scalable and user-focused web applications. I
-          specialize in crafting high-quality solutions that align with business
-          goals and enhance digital experiences.
+          I&apos;m a passionate Fullstack Developer with over a year of
+          hands-on experience in building scalable and user-focused web
+          applications. I specialize in crafting high-quality solutions that
+          align with business goals and enhance digital experiences.
           <span
             onClick={() => {
               const element = document.getElementById("about");

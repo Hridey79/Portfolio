@@ -143,7 +143,7 @@ const Navbar = () => {
                   )}
                 </ul>
                 <a
-                  href="assets/George resume.pdf"
+                  href="assets/resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

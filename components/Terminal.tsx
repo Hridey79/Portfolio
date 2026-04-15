@@ -47,7 +47,7 @@ const TerminalController: React.FC = () => {
             <span className="whitespace-pre-wrap break-words p-1 text-xs sm:text-sm!important max-w-full">
               <TypewriterText delay={0} small={true}>
                 {
-                  "Hi! I'm Hridey Verma, a passionate web developer focusing on Next.js and React. I also have some experience working with backend technologies like Node.js and Express. I enjoy creating modern, responsive web applications and am always eager to learn new technologies and improve my skills. In my free time, I love reading novels and playing chess."
+                  "Hi! I'm Hridey Verma, a Systems Engineer at RuDe Labs. I build full-stack web and mobile applications using React.js, Next.js, React Native, Node.js, Express.js, and TypeScript. I work with tools like Docker, AWS, Firebase, and Supabase. I'm always eager to learn new technologies and improve my skills. In my free time, I love reading novels and playing chess."
                 }
               </TypewriterText>
             </span>

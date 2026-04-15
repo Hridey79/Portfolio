@@ -6,6 +6,13 @@ import { motion } from "framer-motion";
 const Archive = () => {
   const projects = [
     {
+      title: "Quizmefy",
+      description:
+        "An AI-powered quiz platform generating quizzes from prompts using OpenAI API. Implemented authentication using NextAuth with Prisma-based schema design.",
+      tech: ["Next.js", "Prisma", "NextAuth", "OpenAI API"],
+      github: "https://github.com/Hridey79/quizmefy",
+    },
+    {
       title: "Real Estate App",
       description:
         "A solo frontend project fully inspired by the Real Estate DTT site on Awwwards. Built using HTML, CSS, JavaScript, GSAP, and Locomotive, it features advanced scroll animations and effects like multiple image fragments forming a larger visual as the user scrolls.",

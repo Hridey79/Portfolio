@@ -24,7 +24,7 @@ const LeftSide = () => {
           </span>
         </a>
         <a
-          href="https://www.linkedin.com/in/hridey-verma-67633a225/"
+          href="https://www.linkedin.com/in/hridey-verma"
           target="_blank"
         >
           <span

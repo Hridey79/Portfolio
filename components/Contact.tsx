@@ -77,7 +77,7 @@ const Contact = () => {
           <FiGithub size={22} />
         </a>
         <a
-          href="https://www.linkedin.com/in/hridey-verma-67633a225/"
+          href="https://www.linkedin.com/in/hridey-verma"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-textGreen hover:-translate-y-1 transition-all duration-300"

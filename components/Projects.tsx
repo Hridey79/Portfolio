@@ -10,9 +10,9 @@ const Projects = () => {
     {
       title: "Learning Management System",
       description:
-        "A web-based platform for managing and delivering educational courses. It includes features for user authentication, course creation, and progress tracking.",
+        "A MERN LMS supporting course creation, enrollment, and progress tracking. Engineered REST APIs with JWT authentication and optimized MongoDB schema design.",
       image: LMS,
-      tech: ["React", "Express", "MongoDb", "Stripe", "NodeJs", "Tailwind CSS"],
+      tech: ["MongoDB", "Express.js", "React.js", "Node.js"],
       github: "https://github.com/Hridey79/LMS",
       reverse: false,
     },
@@ -29,9 +29,9 @@ const Projects = () => {
     {
       title: "Spotify Clone",
       description:
-        "A web-based application that allows users to stream music, create playlists, and discover new artists. It features user authentication and a responsive design.",
+        "A music streaming platform supporting upload, playback, and search. Integrated Supabase authentication with secure login and recovery flows.",
       image: spotify,
-      tech: ["Next.js", "Supabase", "TypeScript", "Stripe", "Tailwind CSS"],
+      tech: ["Next.js", "Supabase", "PostgreSQL", "Tailwind CSS"],
       github: "https://github.com/Hridey79/Spotify_Clone",
       reverse: false,
     },

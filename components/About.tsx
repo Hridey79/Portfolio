@@ -29,9 +29,9 @@ const About = () => {
             {`
 I am a passionate Software Engineer currently working as a **Systems** **Engineer** at **RuDe** **Labs** . I hold a **B.E.** in **Computer** **Science** and **Engineering** from **Chitkara** **University** , where I graduated with a CGPA of **9.72** .
 
-My expertise lies in building modern, performant, and responsive web applications using technologies like **React.js** , **Next.js** , **Node.js** , **JavaScript** , **HTML** , and **CSS** . I enjoy crafting clean, maintainable code and designing user interfaces that feel intuitive and accessible.
+My expertise lies in building modern, performant, and responsive web applications using technologies like **React.js** , **Next.js** , **Node.js** , **Express.js** , **React** **Native** , **TypeScript** , and **Python** . I also work with tools like **Docker** , **AWS** , **Firebase** , and **Supabase** .
 
-I thrive in collaborative environments that encourage learning, experimentation, and continuous improvement. I'm especially driven by opportunities to bridge the gap between design and development, turning thoughtful ideas into scalable digital experiences.
+I thrive in collaborative environments that encourage learning, experimentation, and continuous improvement. I’m especially driven by opportunities to bridge the gap between design and development, turning thoughtful ideas into scalable digital experiences.
 
 Outside of work, you’ll often find me reading novels or sharpening my strategic thinking with a game of chess.
 `}

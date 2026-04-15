@@ -12,10 +12,10 @@ const experiences = [
     range: "July 2025 - Present",
     url: "https://rudelabs.in",
     points: [
-      "Sigma Earth – Architected an AI-driven ESG reporting platform using React.js, TypeScript, Firebase, and Gemini API.",
-      "WAPS – Designed a monitoring & emergency response portal with role-based workflows, real-time alert handling from mobile apps, and centralized monitoring.",
-      "Built a full-stack Influencer–Brand platform using Next.js, React Native, Supabase, and Meta API for campaign workflows.",
-      "Created a Cricket App in React Native integrating APIs for real-time scores and player statistics.",
+      "Sigma Earth – Architected an AI-driven ESG reporting system using React.js, TypeScript, Firebase, and Gemini API which can generate 10+ ESG documents.",
+      "WAPS – Designed a web portal with role-based workflows, managing users, clients, and monitoring centers. Engineered real-time emergency alert handling from mobile apps, enabling centralized monitoring and improved response visibility.",
+      "Influencer–Brand Platform – Delivered a full-stack system using Next.js, React Native, Supabase, and Meta API for campaign workflows with 15+ fully responsive screens.",
+      "Cricket App – Created a React Native app integrating APIs for real-time scores and player statistics.",
     ],
   },
   {
@@ -25,8 +25,9 @@ const experiences = [
     range: "Dec 2024 - June 2025",
     url: "https://rudelabs.in",
     points: [
-      "FinRaces – Designed a real-time stock prediction platform using React.js, TypeScript, and Firebase with dashboards, leaderboards, and watchlists with live updates.",
-      "Sustrack – Built an ESG reporting platform using React.js, Firebase, and Chart.js with automated report generation workflows, reducing manual reporting effort.",
+      "FinRaces – Designed a real-time stock prediction platform using React.js with 10+ screens and more than 20 comparable metrics. Designed and integrated dashboards, leaderboards, and watchlists with live updates.",
+      "RuDe Labs Website – Developed and deployed the official company website using Next.js, Tailwind CSS, and Framer Motion, showcasing projects, services, and team members.",
+      "Enhanced user experience with responsive design, interactive animations, and performance optimizations, ensuring fast load times and modern UI/UX standards.",
     ],
   },
 ];
