@@ -8,8 +8,8 @@ import { TiArrowForward } from "react-icons/ti";
 const experiences = [
   {
     company: "RuDe Labs",
-    title: "Systems Engineer",
-    range: "July 2025 - Present",
+    title: "System Engineer",
+    range: "June 2025 - Present",
     url: "https://rudelabs.in",
     points: [
       "Sigma Earth – Architected an AI-driven ESG reporting system using React.js, TypeScript, Firebase, and Gemini API which can generate 10+ ESG documents.",
@@ -21,7 +21,7 @@ const experiences = [
   {
     company: "RuDe Labs",
     companyLabel: "RuDe Labs (Trainee)",
-    title: "Systems Engineer Trainee",
+    title: "System Engineer Trainee",
     range: "Dec 2024 - June 2025",
     url: "https://rudelabs.in",
     points: [
