@@ -9,7 +9,7 @@ const experiences = [
   {
     company: "RuDe Labs",
     title: "System Engineer",
-    range: "June 2025 - Present",
+    range: "June 2025 - April 2026",
     url: "https://rudelabs.in",
     points: [
       "AI ESG Platfprm – Architected an AI-driven ESG reporting system using React.js, TypeScript, Firebase, and Gemini API which can generate 10+ ESG documents.",
